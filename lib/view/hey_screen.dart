@@ -173,34 +173,36 @@ class _HeyScreenState extends State<HeyScreen> {
                               color: Colors.white,
                             ),
 
-               child: Column(
-                 children: [
-                        Container(
-                          color: primary,
-                          child: Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                                          children: [
-                                           // CircleAvatar(radius: 15,),
-                                            
-                                            Align(
-                                              alignment: Alignment.center,
-                                              child: Text("Managing notifications",style: TextStyle(fontSize: 22,color: Colors.white.withOpacity(0.8)),)),                                            
-                                            
-                                          ],
-                                        ),
+               child: SingleChildScrollView(
+                 child: Column(
+                   children: [
+                          Container(
+                            color: primary,
+                            child: Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                             // CircleAvatar(radius: 15,),
+                                              
+                                              Align(
+                                                alignment: Alignment.center,
+                                                child: Text("Managing notifications",style: TextStyle(fontSize: 22,color: Colors.white.withOpacity(0.8)),)),                                            
+                                              
+                                            ],
+                                          ),
+                            ),
                           ),
-                        ),
-                    Padding(
-                      padding: const EdgeInsets.all(58.0),
-                      child: Container(
-                        child: Text(
-                          style: TextStyle(color: primary.withOpacity(0.8)),
-                          'File…\nmnanaging notifications\nA message from Basecamp\nJan 30\nHi again!Let\'s talk about something near and dear to all of us. Notifications 🚨Personalizing your notifications is essential — update your settings to be intentional, not overwhelming.When you\'re updating your notification settings, you can decide What you\'re notified about, How you\'re notified, and When. \nFind those by clicking on your avatar in the top right corner, then selecting "Change your notification settings."I also want to call out Focus Mode. When you enable it, Basecamp temporarily quiets all notifications. Simply click on your avatar in the upper-right corner and select “Turn on Focus Mode.” When you\'re ready, you can turn it off and catch up on everything that happened while you were in the zone.LauraCustomer Success at Basecamp📣 If you\'re tired of seeing me (and all Basecamp notifications) in your inbox, you can unsubscribe! Head to your Basecamp account and click on your avatar. Select "Change notification settings" and make sure "Send me email notifications" is unchecked.')),
-                    )
-
-                 ],
+                      Padding(
+                        padding: const EdgeInsets.all(58.0),
+                        child: Container(
+                          child: Text(
+                            style: TextStyle(color: primary.withOpacity(0.8)),
+                            'File…\nmnanaging notifications\nA message from Basecamp\nJan 30\nHi again!Let\'s talk about something near and dear to all of us. Notifications 🚨Personalizing your notifications is essential — update your settings to be intentional, not overwhelming.When you\'re updating your notification settings, you can decide What you\'re notified about, How you\'re notified, and When. \nFind those by clicking on your avatar in the top right corner, then selecting "Change your notification settings."I also want to call out Focus Mode. When you enable it, Basecamp temporarily quiets all notifications. Simply click on your avatar in the upper-right corner and select “Turn on Focus Mode.” When you\'re ready, you can turn it off and catch up on everything that happened while you were in the zone.LauraCustomer Success at Basecamp📣 If you\'re tired of seeing me (and all Basecamp notifications) in your inbox, you can unsubscribe! Head to your Basecamp account and click on your avatar. Select "Change notification settings" and make sure "Send me email notifications" is unchecked.')),
+                      )
+                 
+                   ],
+                 ),
                ),
               ),
 
